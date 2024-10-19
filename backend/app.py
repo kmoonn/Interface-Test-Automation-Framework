@@ -1,6 +1,8 @@
-import os, sys
-from config.setting import SERVER_PORT
+import os
+import sys
+
 from api.user import app
+from config.setting import SERVER_PORT
 
 # 项目根路径
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

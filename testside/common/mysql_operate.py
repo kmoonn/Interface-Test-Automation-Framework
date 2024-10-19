@@ -16,13 +16,14 @@ DB_CONF = {
 }
 
 
-class MysqlDb():
+class MysqlDb:
 
     def __init__(self, db_conf=DB_CONF):
         # 通过字典拆包传递配置信息，建立数据库连接
         self.conn = pymysql.connect(**db_conf, autocommit=True)
         # 通过 cursor() 创建游标对象，并让查询结果以字典格式输出
         self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
+        print(self.cur)
 
     def __del__(self):  # 对象资源被释放时触发，在对象即将被删除时的最后操作
         # 关闭游标

@@ -1,11 +1,10 @@
 import re
 import time
 
-from flask import Flask, jsonify, request
-
 from backend.common.md5_operate import get_md5
 from backend.common.mysql_operate import db
 from backend.common.redis_operate import redis_db
+from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 app.config["JSON_AS_ASCII"] = False  # jsonify返回的中文正常显示
