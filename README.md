@@ -1,4 +1,40 @@
+# Interface-Test-Automation-Framework
 # 接口自动化测试项目
+
+## Backend 后端接口端
+
+技术栈：Python + Flask + MySQL + Redis
+
+- Python、Flask
+
+开发接口
+
+- MySQL
+
+存储用户信息
+
+- Redis
+
+存储token
+
+## 目录结构
+
+- api
+
+- common
+
+- config
+
+app.py
+
+
+## Frontend
+
+前端
+
+## Testside
+
+测试端
 
 技术栈：Python + Requests + Pytest + YAML + Allure
 
@@ -18,7 +54,7 @@
 
 生产测试报告
 
-## 项目结构
+## 目录结构
 
 - api 接口封装层
 - common 工具类
@@ -29,20 +65,3 @@
 - testcase 测试用例
 - pytest.ini pytest 配置文件
 - requirements.txt 相关依赖包
-
-
-# 后端接口项目
-
-技术栈：Python + Flask + MySQL + Redis
-
-- Python、Flask
-
-开发接口
-
-- MySQL
-
-存储用户信息
-
-- Redis
-
-存储token
