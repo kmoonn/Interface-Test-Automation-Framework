@@ -2,7 +2,7 @@ import redis
 from backend.config.setting import REDIS_HOST, REDIS_PORT, REDIS_PASSWD, EXPIRE_TIME
 
 
-class RedisDb():
+class RedisDb:
 
     def __init__(self, host, port, passwd):
         # 建立数据库连接
